@@ -1,0 +1,88 @@
+/* src/css/Buttons.css */
+.add-button,
+.submit-button,
+.edit-button,
+.delete-button,
+.cancel-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 5px rgba(81, 143, 243, 0.1);
+}
+
+.add-button {
+    background-color: #2ecc71; /* Verde para añadir */
+    color: white;
+}
+
+.add-button:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button {
+    background-color: #3498db; /* Azul para enviar/guardar */
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.edit-button {
+    background-color: #f39c12; /* Naranja para editar */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.delete-button {
+    background-color: #e74c3c; /* Rojo para eliminar */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cancel-button {
+    background-color: #95a5a6; /* Gris para cancelar */
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #7f8c8d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 768px) {
+    .add-button,
+    .submit-button,
+    .edit-button,
+    .delete-button,
+    .cancel-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+        width: 100%; /* Ocupa todo el ancho en móviles */
+        margin-bottom: 0.5rem; /* Espacio entre botones apilados */
+    }
+}

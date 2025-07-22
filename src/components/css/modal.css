@@ -1,0 +1,116 @@
+/* src/css/Modal.css */
+.modal-overlay {
+  position: fixed; /* Fija el modal sobre todo el contenido */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  z-index: 100080; /* Asegura que esté por encima de otros elementos */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+  animation: fadeInScale 0.3s ease-out forwards; /* Animación de entrada */
+}
+
+.modal-title {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.modal-message {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espacio entre los botones */
+}
+
+.modal-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px; /* Bordes más redondeados */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+}
+
+.confirm-button {
+    background-color: #2ecc71; /* Verde para confirmar */
+    color: white;
+}
+
+.confirm-button:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+
+.cancel-button {
+    background-color: #e74c3c; /* Rojo para cancelar */
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+.close-button {
+  background-color: #3498db; /* Azul para cerrar (informativo) */
+    color: white;
+}
+
+.close-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Animación de entrada */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 1.5rem;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .modal-message {
+        font-size: 1rem;
+    }
+
+    .modal-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,93 @@
+.form-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #e6f2ff;
+  border: 1px solid #b3d9ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(57, 139, 221, 0.2);
+}
+
+.form-container h1 {
+  text-align: center;
+  color: #007acc;
+}
+
+.campo-formulario {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-formulario label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #005c99;
+}
+
+.campo-formulario input {
+  padding: 8px;
+  border: 1px solid #b3d9ff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005c99;
+}
+/* src/components/css/formulariocontacto.css */
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.formulario h3 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  grid-column: 1 / -1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+/* Haz el textarea más alto y que ocupe toda la fila */
+.formulario textarea {
+  grid-column: 1 / -1;
+  min-height: 120px;
+}
+
+/* Botón centrado y en su propia fila */
+.formulario button {
+  border-radius: 16px;
+  grid-column: 1 / -1;
+  justify-self: center;
+  padding: 0.6rem 1.2rem;
+  width: 100%;
+}
+

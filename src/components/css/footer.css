@@ -1,0 +1,22 @@
+/* src/css/Footer.css */
+.footer {
+    background-color: #34495e; /* Color de fondo oscuro */
+    color: #ecf0f1; /* Color de texto claro */
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 20px; /* Espacio encima del pie de página */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for the footer */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem;
+    }
+}

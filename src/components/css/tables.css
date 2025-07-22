@@ -1,0 +1,100 @@
+/* src/css/Tables.css */
+.table-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.table-actions {
+  display: flex;
+  justify-content: flex-end; /* Alinea el botón a la derecha */
+  margin-bottom: 1.5rem;
+}
+
+.table-responsive {
+  overflow-x: auto; /* Permite desplazamiento horizontal en tablas grandes */
+  -webkit-overflow-scrolling: touch; /* Mejora el scroll en iOS */
+  border-radius: 10px; /* Bordes redondeados para el contenedor de la tabla */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.app-table {
+  width: 100%;
+  border-collapse: separate; /* Permite border-radius en celdas */
+  border-spacing: 0; /* Elimina espacio entre celdas */
+  background-color: #ffffff;
+  min-width: 600px; /* Asegura un ancho mínimo para la tabla */
+}
+
+.app-table thead {
+  background-color: #34495e; /* Color de cabecera oscuro */
+  color: white;
+}
+
+.app-table th {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1rem;
+  white-space: nowrap; /* Evita que el texto de la cabecera se rompa */
+}
+
+.app-table th:first-child {
+  border-top-left-radius: 10px; /* Bordes redondeados en la cabecera */
+}
+
+.app-table th:last-child {
+  border-top-right-radius: 10px; /* Bordes redondeados en la cabecera */
+}
+
+.app-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #ecf0f1; /* Línea divisoria suave */
+  background: (to right, #608cd3, #fac4f2);
+  white-space: nowrap; /* Evita que el texto de la celda se rompa */
+}
+
+.app-table tbody tr:last-child td {
+  border-bottom: none; /* No hay línea en la última fila */
+}
+
+.app-table tbody tr:hover {
+  background: linear-gradient(to right, #03388c, #ed02c9);
+}
+
+.table-actions-cell {
+  display: flex;
+  gap: 0.5rem; /* Espacio entre botones de acción */
+  justify-content: center; /* Centra los botones en la celda */
+  align-items: center;
+}
+
+.no-data-message {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #777;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+/* Responsive adjustments for tables */
+@media (max-width: 768px) {
+  .table-title {
+    font-size: 1.8rem;
+  }
+
+  .table-actions {
+    justify-content: center; /* Centra el botón en móviles */
+    margin-bottom: 1rem;
+  }
+
+  .app-table th,
+  .app-table td {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
